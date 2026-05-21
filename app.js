@@ -71,3 +71,25 @@ notesArea.addEventListener('input', () => {
 const ctx = document.getElementById('productivityChart');
 
 });
+
+// =========================
+// SIDEBAR MOBILE
+// =========================
+
+const mobileToggle = document.getElementById('mobileToggle');
+const sidebar = document.getElementById('sidebar');
+const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+mobileToggle.addEventListener('click', () => {
+
+    sidebar.classList.toggle('active');
+    sidebarOverlay.classList.toggle('active');
+
+});
+
+sidebarOverlay.addEventListener('click', () => {
+
+    sidebar.classList.remove('active');
+    sidebarOverlay.classList.remove('active');
+
+}); 
